@@ -190,13 +190,12 @@ index.html
 
 diretamente no navegador.
 
-### 3. Hospedagem
+### 3. Ambiente de Produção (GitHub Pages)
 
-O projeto pode ser publicado facilmente em serviços como:
+O projeto está publicado e disponível para demonstração através do **GitHub Pages**, permitindo visualizar sua interface e funcionalidades diretamente no navegador.
 
-- GitHub Pages
-- Netlify
-- Vercel
-- Cloudflare Pages
+Link do projeto:
+
+https://israel-reis-pereira.github.io/loja-megamoda/
 
 ---
