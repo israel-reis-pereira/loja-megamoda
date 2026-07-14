@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Modas | Seu Estilo, Nossa Paixão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<body>
+    <header class="fixed top-0 left-0 w-full bg-white shadow-lg z-30"> <!-- cabecalho -->
+        <div class="w-full px-6 flex items-center justify-between h-20">
+            
+            <a href="index.html" class="flex items-center h-full py-1">
+                <img src="imagens/logotipo.png" alt="Logo Mega Modas" class="h-16 w-auto object-contain">
+            </a>
+
+            <nav class="hidden md:block"> 
+                <ul class="menu flex flex-row space-x-8 items-center" id="main-menu-desktop">
+                    <li><a href="index.html" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Home</a></li>
+                    <a href="produtos.html" class="menu-link flex items-center text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Produtos</a>
+                    <li><a href="index.html#sobre" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Sobre</a></li>
+                    <li><a style="color:#e91e63" href="index.html#consultoria" class="menu-link block text-[#e91e63] hover:text-red-700 font-bold transition duration-200 py-2">Consultoria <i class="fa-solid fa-wand-magic-sparkles"></i> </a></li>
+                    <li><a href="#contato" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle md:hidden" id="menu-toggle" aria-expanded="false" aria-controls="main-menu-mobile" aria-label="Alternar Menu de Navegação">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </button>
+            
+            <nav class="absolute top-20 left-0 w-full bg-white shadow-lg z-20 md:hidden hidden" id="main-menu-mobile">
+                 <ul class="menu flex flex-col space-y-2 p-4">
+                    <li><a href="index.html" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Home</a></li>
+                        <a href="produtos.html" class="menu-link flex items-center justify-between text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Produtos</a>
+                    <li><a href="index.html#sobre" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Sobre</a></li>
+                    <li><a style="color:#e91e63" href="index.html#consultoria" class="menu-link block text-[#e91e63] hover:text-red-700 font-bold transition duration-200 py-2">Consultoria <i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                    <li><a href="index.html#contato" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Contato</a></li>
+                 </ul>
+            </nav>
+            
+        </div>
+    </header>
+<main id="home">
+    <section><!-- produto -->
+    <div class="prod-container">
+        <br><br> <br><br>
+        <div class="section store">
+            <h1 class="text-3xl font-bold mb-4">Detalhes do Produto</h1>
+            <p class="text-gray-500">Informações completas sobre o item selecionado.</p>
+            <a href="produtos.html" class="inline-block mt-4 text-[#e91e63] font-bold hover:underline mb-8"><i class="fas fa-arrow-left mr-2"></i>Voltar para a página de Produtos</a>
+            <div class="store-info grid gap-8 md:grid-cols-2 items-start">
+                <img class="w-full h-auto rounded-xl shadow-lg" src="imagens/Produto1.png" alt="Sandália Moleca">
+                
+                <div class="product-details-container">
+                    <div class="product-info-panel">
+                        <h1 class="text-3xl font-extrabold mb-2 text-gray-900">Sandália Moleca</h1>
+                        <p style="font-size: 2.5rem; color: var(--rosa); font-weight: 800; margin-bottom: 1.5rem;">R$ 129,90</p>
+                        
+                        <div class="info-bloco">
+                            <h4><i style="color: #ff4081;" class="fas fa-truck"></i> Informações Adicionais</h4>
+                            <p class="mb-1 mt-3 text-gray-700"><strong>Descrição:</strong> Sandália super confortável, ideal para o verão, com design moderno e anatômico.</p>
+                            <p class="mb-1 text-gray-700"><strong>Tamanhos:</strong> 34, 35, 36, 37, 38, 39.</p>
+                            <p class="mb-3 text-gray-700"><strong>Disponibilidade:</strong> Em estoque (limitado).</p>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <a id="btnReserva" href="https://wa.me/5517981945396?text=Olá, gostaria de reservar a Sandália Moleca (R$ 129,90)" target="_blank" class="btn-reservar">
+                                <i class="fab fa-whatsapp"></i> Reservar Item
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contato" class="contato py-16 bg-gray-200">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-10 text-center">Fale Conosco</h2>
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2 mapa">
+                    <div class="mapa-wrapper shadow-xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.360075193738!2d-48.56285362384117!3d-20.532443157352755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bb84cd19fca1f7%3A0xb64d5b4e4c0fdb5f!2sR.%20Nicom%C3%A9des%20de%20Oliveira%20Mafra%2C%20275%20-%20Jardim%20California%2C%20Barretos%20-%20SP%2C%2014781-270!5e0!3m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="md:w-1/2 contato-info p-6 bg-white rounded-xl shadow-xl">
+                    <div class="info-bloco mb-6">
+                        <h4 class="text-xl font-bold mb-2"><i style="color:#e91e63" class="fas fa-map-marker-alt mr-2"></i> Nosso Endereço</h4>
+                        <p class="text-gray-600">R. Nicomédess de Oliveira Mafra, 275<br>Jardim Califórnia, Barretos - SP</p>
+                    </div>
+                    <div class="info-bloco mb-8">
+                        <h4 class="text-xl font-bold mb-2"><i style="color:#e91e63" class="fas fa-clock mr-2"></i> Horário de Atendimento</h4>
+                        <ul class="horario-atendimento space-y-1 text-gray-600">
+                            <li><span>Segunda a Sábado:</span> 09:00 - 19:30</li>
+                            <li><span>Domingo:</span> Fechado</li>
+                        </ul>
+                    </div>
+                    <p class="text-lg font-medium mb-4">Fale conosco pelas redes sociais ou venha nos fazer uma visita!</p>
+                    <div class="contato-links flex flex-wrap gap-3">
+                        <a href="https://api.whatsapp.com/send/?phone=5517981945396&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp flex items-center justify-center btn-prod bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition duration-200">
+                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/megamodas_lidi/" target="_blank" class=" whatsapp items-center justify-center btn-prod bg-pink-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-pink-700 transition duration-200">
+                            <i class="fab fa-instagram mr-2"></i> Instagram
+                        </a>
+                        <a href="https://www.facebook.com/lidi.mega.3" target="_blank" class="whatsapp flex items-center justify-center btn-prod bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-200">
+                            <i class="fab fa-facebook mr-2"></i> Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer style="background-color: #212529; " class="bg-gray-800 text-white p-6 text-center">
+    <p>© 2026 Mega Modas - Todos os direitos reservados.</p>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('btnReserva');
+            const originalColor = '#333';
+            const hoverColor = '#e91e63';
+            
+            // Mouse Over (Hover)
+            btn.addEventListener('mouseover', () => {
+                btn.style.backgroundColor = hoverColor;
+                btn.style.transform = 'scale(1.02)';
+                btn.style.cursor = 'pointer';
+            });
+            
+            // Mouse Out (Remover Hover)
+            btn.addEventListener('mouseout', () => {
+                btn.style.backgroundColor = originalColor;
+                btn.style.transform = 'scale(1)';
+            });
+        });
+    // --- JS Menu Mobile ---
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('main-menu-mobile'); 
+    const submenuItems = document.querySelectorAll('#main-menu-mobile .has-submenu > a');
+    const mdBreakpoint = 768; 
+    menuToggle.addEventListener('click', () => { menuToggle.classList.toggle('open'); mobileMenu.classList.toggle('hidden'); mobileMenu.classList.toggle('flex'); });
+    submenuItems.forEach(link => { link.addEventListener('click', (e) => { if (window.innerWidth < mdBreakpoint) { e.preventDefault(); const parentLi = link.closest('.has-submenu'); parentLi.classList.toggle('submenu-open'); } }); });
+
+    // --- JS Slider ---
+    let currentSlide = 0;
+    const slidesContainer = document.getElementById('banner-slides');
+    const slides = document.querySelectorAll('.banner-slider .slides img');
+    const totalSlides = slides.length;
+    const prevButton = document.getElementById('prev-slide');
+    const nextButton = document.getElementById('next-slide');
+    const dotsContainer = document.getElementById('slider-dots');
+    const updateSlider = () => { const offset = -currentSlide * 100 / totalSlides; slidesContainer.style.transform = `translateX(${offset}%)`; updateDots(); };
+    const updateDots = () => { dotsContainer.innerHTML = ''; slides.forEach((_, index) => { const dot = document.createElement('span'); dot.classList.add('dot'); if (index === currentSlide) { dot.classList.add('active'); } dot.addEventListener('click', () => { currentSlide = index; updateSlider(); }); dotsContainer.appendChild(dot); }); };
+    const nextSlide = () => { currentSlide = (currentSlide + 1) % totalSlides; updateSlider(); };
+    const prevSlide = () => { currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; updateSlider(); };
+    nextButton.addEventListener('click', nextSlide); prevButton.addEventListener('click', prevSlide);
+    updateSlider(); setInterval(nextSlide, 5000); 
+</script>
+</body>
+</html>

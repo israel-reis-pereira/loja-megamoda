@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Modas | Seu Estilo, Nossa Paixão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="fixed top-0 left-0 w-full bg-white shadow-lg z-30"><!-- cabecalho -->
+        <div class="w-full px-6 flex items-center justify-between h-20">
+            <a href="#home" class="flex items-center h-full py-1">
+                <img src="imagens/logotipo.png" alt="Logo Mega Modas" class="h-16 w-auto object-contain">
+            </a>
+
+            <nav class="hidden md:block"> 
+                <ul class="menu flex flex-row space-x-8 items-center" id="main-menu-desktop">
+                    <li><a href="#home" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Home</a></li>
+                    <li><a href="#sobre" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Sobre</a></li>
+                    <li><a href="#produtos" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Produtos</a></li>
+                    <li><a style="color:#e91e63" href="#consultoria" class="menu-link block text-[#e91e63] hover:text-red-700 font-bold transition duration-200 py-2">Consultoria <i class="fa-solid fa-wand-magic-sparkles"></i> </a></li>
+                    <li><a href="#contato" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle md:hidden" id="menu-toggle" aria-expanded="false" aria-controls="main-menu-mobile" aria-label="Alternar Menu de Navegação">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </button>
+            
+            <nav class="absolute top-20 left-0 w-full bg-white shadow-lg z-20 md:hidden hidden" id="main-menu-mobile">
+                 <ul class="menu flex flex-col space-y-2 p-4">
+                    <li><a href="#home" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Home</a></li>
+                    <li><a href="#sobre" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Sobre</a></li>
+                    <li><a href="#produtos" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Produtos</a></li>
+                    <li><a style="color:#e91e63" href="#consultoria" class="menu-link block text-[#e91e63] hover:text-red-700 font-bold transition duration-200 py-2">Consultoria <i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                    <li><a href="#contato" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Contato</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+<main id="home">  
+    <section class="banner-slider"><!-- banner -->
+        <div class="slides" id="banner-slides">
+            <img src="imagens/banner2.jpg" alt="Banner 1" class="object-cover">
+            <img src="imagens/banner1.jpg" alt="Banner 2" class="object-cover">
+            <img src="imagens/banner4.jpg" alt="Banner 3" class="object-cover">
+        </div>
+        <button class="arrow left" id="prev-slide"><i class="fas fa-chevron-left"></i></button>
+        <button class="arrow right" id="next-slide"><i class="fas fa-chevron-right"></i></button>
+        <div class="dots" id="slider-dots"></div>
+    </section>
+
+    <section id="sobre" class="py-16 bg-white scroll-mt-24"><!-- sobre -->
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2">
+                    <img src="imagens/foto1.png" alt="Roupas em cabides na Mega Modas" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-4 border-b-2 border-[#e91e63] inline-block pb-1">Sobre Nós</h2>
+                    <p class="text-lg mb-4"><strong>Bem-vinda à Mega Modas!</strong></p>
+                    <p class="mb-4">Mais do que uma loja, somos um espaço apaixonado por moda, criado para as pessoas que buscam expressar sua personalidade e força através do que veste.</p>
+                    <p class="mb-4">Nossa missão é unir as últimas tendências a peças de alta qualidade, sem nunca abrir mão do conforto. Cada coleção é cuidadosamente selecionada, pensando em oferecer roupas e calçados versáteis para acompanhar você em todos os momentos.</p>
+                    <p style="color: #e91e63;" class="mb-4 font-medium ">Acreditamos que a moda é uma ferramenta de autoestima. Por isso, trabalhamos para que você encontre aqui não apenas uma roupa nova, mas a peça perfeita que faz você se sentir ainda mais confiante e estilosa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-16 bg-white scroll-mt-24"><!-- produtos -->
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-10 ">Nossas Categorias</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-4">
+                <div id="infantil" class="p-6 rounded-xl shadow-lg bg-red-50 hover:shadow-xl transition duration-300">
+                    <i class="fa-solid fa-children text-4xl text-[#e91e63] mb-3"></i>
+                    <h3 class="text-2xl font-bold text-gray-800">Moda Infantil</h3>
+                    <p class="text-gray-600 mt-2">Looks divertidos e modernos: camisetas, shorts, vestidos e muito mais para deixar a infância cheia de cor.</p>
+                </div>
+                <div id="calcados" class="p-6 rounded-xl shadow-lg bg-gray-50 hover:shadow-xl transition duration-300">
+                    <i class="fas fa-shoe-prints text-4xl text-gray-700 mb-3"></i>
+                    <h3 class="text-2xl font-bold text-gray-800">Calçados</h3>
+                    <p class="text-gray-600 mt-2">Conforto e estilo para todos os passos da sua jornada.</p>
+                </div>
+                <div id="acessorios" class="p-6 rounded-xl shadow-lg bg-yellow-50 hover:shadow-xl transition duration-300">
+                    <i class="fas fa-gem text-4xl text-yellow-600 mb-3"></i>
+                    <h3 class="text-2xl font-bold text-gray-800">Acessórios</h3>
+                    <p class="text-gray-600 mt-2">O toque final que transforma qualquer look básico em extraordinário.</p>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a href="produtos.html" class="inline-block bg-[#e91e63] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-[#d81b60] hover:scale-105 transition duration-300 transform">
+                     Veja alguns dos nossos produtos <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="consultoria" class="py-16 bg-gray-100 scroll-mt-24"><!-- consultoria -->
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 style="color:#e91e63" class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Consultoria de Estilo <i class="fa-solid fa-wand-magic-sparkles"></i> </h2>
+            <p class="text-center text-lg mb-8 max-w-2xl mx-auto">Descreva o evento, a ocasião ou o seu humor para receber uma sugestão de look personalizada do nosso Personal Stylist Gemini!</p>
+            <div class="max-w-xl mx-auto p-6 bg-white rounded-xl shadow-2xl">
+                <div class="input-area mb-4">
+                    <textarea id="style-prompt" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500" placeholder="Ex: Preciso de uma roupa elegante para um jantar de aniversário à noite." rows="4"></textarea>
+                    <button style=" background-color:#e91e63" id="generate-style-btn" class="btn-primary whatsapp w-full mt-4 py-3 rounded-lg font-bold text-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50">
+                        <i class="fa-solid fa-hand-sparkles"></i> Gerar Sugestão de Estilo <i class="fa-solid fa-hand-sparkles"></i>
+                    </button>
+                </div>
+                <div id="resultado-estilo" class="resultado-estilo mt-6 text-gray-700">
+                    <p class="text-center text-gray-500 italic">Sua sugestão de look personalizada aparecerá aqui.</p>
+                </div>
+                <div id="loading-indicator" class="hidden text-center mt-4">
+                    <div class="loading-spinner"></div>
+                    <p class="text-[#e91e63] font-semibold">Buscando a inspiração perfeita...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato py-16 bg-gray-200 scroll-mt-24"><!-- contato -->
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-10 text-center">Fale Conosco</h2>
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2 mapa">
+                    <div class="mapa-wrapper shadow-xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.360075193738!2d-48.56285362384117!3d-20.532443157352755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bb84cd19fca1f7%3A0xb64d5b4e4c0fdb5f!2sR.%20Nicom%C3%A9des%20de%20Oliveira%20Mafra%2C%20275%20-%20Jardim%20California%2C%20Barretos%20-%20SP%2C%2014781-270!5e0!3m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="md:w-1/2 contato-info p-6 bg-white rounded-xl shadow-xl">
+                    <div class="info-bloco mb-6">
+                        <h4 class="text-xl font-bold mb-2"><i style="color:#e91e63" class="fas fa-map-marker-alt mr-2"></i> Nosso Endereço</h4>
+                        <p class="text-gray-600">R. Nicomédess de Oliveira Mafra, 275<br>Jardim Califórnia, Barretos - SP</p>
+                    </div>
+                    <div class="info-bloco mb-8">
+                        <h4 class="text-xl font-bold mb-2"><i style="color:#e91e63" class="fas fa-clock mr-2"></i> Horário de Atendimento</h4>
+                        <ul class="horario-atendimento space-y-1 text-gray-600">
+                            <li><span>Segunda a Sábado:</span> 09:00 - 19:30</li>
+                            <li><span>Domingo:</span> Fechado</li>
+                        </ul>
+                    </div>
+                    <p class="text-lg font-medium mb-4">Fale conosco pelas redes sociais ou venha nos fazer uma visita!</p>
+                    <div class="contato-links flex flex-wrap gap-3">
+                        <a href="https://api.whatsapp.com/send/?phone=5517981945396&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp flex items-center justify-center btn-contato bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition duration-200">
+                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/megamodas_lidi/" target="_blank" class="whatsapp flex items-center justify-center btn-contato bg-pink-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-pink-700 transition duration-200">
+                            <i class="fab fa-instagram mr-2"></i> Instagram
+                        </a>
+                        <a href="https://www.facebook.com/lidi.mega.3" target="_blank" class="whatsapp flex items-center justify-center btn-contato bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-200">
+                            <i class="fab fa-facebook mr-2"></i> Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer style="background-color: #212529; " class="bg-gray-800 text-white p-6 text-center">
+    <p>© 2026 Mega Modas - Todos os direitos reservados.</p>
+</footer>
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('main-menu-mobile'); 
+    menuToggle.addEventListener('click', () => { 
+        menuToggle.classList.toggle('open'); 
+        mobileMenu.classList.toggle('hidden'); 
+        mobileMenu.classList.toggle('flex'); 
+    });
+
+    let currentSlide = 0;
+    const slidesContainer = document.getElementById('banner-slides');
+    const slides = document.querySelectorAll('.banner-slider .slides img');
+    const totalSlides = slides.length;
+    const prevButton = document.getElementById('prev-slide');
+    const nextButton = document.getElementById('next-slide');
+    const dotsContainer = document.getElementById('slider-dots');
+    const updateSlider = () => { const offset = -currentSlide * 100 / totalSlides; slidesContainer.style.transform = `translateX(${offset}%)`; updateDots(); };
+    const updateDots = () => { dotsContainer.innerHTML = ''; slides.forEach((_, index) => { const dot = document.createElement('span'); dot.classList.add('dot'); if (index === currentSlide) { dot.classList.add('active'); } dot.addEventListener('click', () => { currentSlide = index; updateSlider(); }); dotsContainer.appendChild(dot); }); };
+    const nextSlide = () => { currentSlide = (currentSlide + 1) % totalSlides; updateSlider(); };
+    const prevSlide = () => { currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; updateSlider(); };
+    nextButton.addEventListener('click', nextSlide); prevButton.addEventListener('click', prevSlide);
+    updateSlider(); setInterval(nextSlide, 5000); 
+
+    const API_KEY = "sua_chave"; 
+    const API_URL = `sua_chave_url`;
+    const stylePrompt = document.getElementById('style-prompt');
+    const generateBtn = document.getElementById('generate-style-btn');
+    const resultadoDiv = document.getElementById('resultado-estilo');
+    const loadingIndicator = document.getElementById('loading-indicator');
+    function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+    async function getStyleSuggestion(prompt) {
+        const systemPrompt = `Você é um Personal Stylist da Mega Modas. Analise a ocasião ou o humor fornecido e sugira um look completo (roupa principal, calçado e um acessório), com um tom de voz entusiasta, confiante e inspirador, focado em tendências da moda feminina. O look deve ser ideal para a cliente. Responda em Português (Brasil).`;
+        const userQuery = `Minha ocasião/necessidade é: ${prompt}`;
+        const payload = { contents: [{ parts: [{ text: userQuery }] }], systemInstruction: { parts: [{ text: systemPrompt }] }, };
+        let lastError = null;
+        for (let i = 0; i < 3; i++) { 
+            try {
+                const response = await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                if (!response.ok) { throw new Error(`HTTP error! status: ${response.status}`); }
+                const result = await response.json();
+                const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (text) return text; else throw new Error("Resposta da API vazia ou inesperada.");
+            } catch (error) { lastError = error; console.error(`Tentativa ${i + 1} falhou:`, error); if (i < 2) await sleep(Math.pow(2, i) * 1000); }
+        }
+        throw new Error("Todas as tentativas de conexão com a API falharam: " + lastError.message);
+    }
+    generateBtn.addEventListener('click', async () => {
+        const prompt = stylePrompt.value.trim();
+        if (!prompt) { resultadoDiv.innerHTML = '<p class="text-[#e91e63] font-semibold">Por favor, descreva o que você precisa para a sua consultoria de estilo.</p>'; return; }
+        resultadoDiv.innerHTML = ''; loadingIndicator.classList.remove('hidden'); generateBtn.disabled = true;
+        try {
+            const suggestion = await getStyleSuggestion(prompt);
+            const formattedSuggestion = suggestion.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>'); 
+            resultadoDiv.innerHTML = `<h3 class="text-xl font-bold mb-3 text-[#e91e63]">🎉 Seu Look Exclusivo!</h3><p>${formattedSuggestion}</p>`;
+        } catch (error) { console.error("Erro na consultoria:", error); resultadoDiv.innerHTML = `<h3 class="text-xl font-bold mb-3 text-[#e91e63]">Ops, Ocorreu um Erro!</h3><p>Não foi possível gerar a sugestão de look no momento. Por favor, tente novamente mais tarde.</p><p class="text-sm italic text-gray-500">Detalhe: ${error.message}</p>`; } finally { loadingIndicator.classList.add('hidden'); generateBtn.disabled = false; }
+    });
+</script>
+</body>
+</html>

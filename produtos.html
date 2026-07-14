@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Modas | Catálogo Completo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header class="fixed top-0 left-0 w-full bg-white shadow-lg z-30">
+        <div class="w-full px-6 flex items-center justify-between h-20">
+            <a href="index.html" class="flex items-center h-full py-1">
+                <img src="Imagens/logotipo.png" alt="Logo Mega Modas" class="h-16 w-auto object-contain">
+            </a>
+
+            <nav class="hidden md:block"> 
+                <ul class="menu flex flex-row space-x-8 items-center">
+                    <li><a href="index.html" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Voltar para Home</a></li>
+                    <li><a href="#infantil" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Infantil</a></li>
+                    <li><a href="#calcados" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Calçados</a></li>
+                    <li><a href="#acessorios" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Bolsas</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle md:hidden" id="menu-toggle">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </button>
+            
+            <nav class="absolute top-20 left-0 w-full bg-white shadow-lg z-20 md:hidden hidden" id="main-menu-mobile">
+                 <ul class="menu flex flex-col space-y-2 p-4">
+                    <li><a href="index.html" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Voltar para Home</a></li>
+                    <li><a href="#infantil" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Infantil</a></li>
+                    <li><a href="#calcados" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Calçados</a></li>
+                    <li><a href="#acessorios" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Bolsas</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-16">
+        
+        <div class="text-center mb-12 px-4">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Catálogo Completo</h1>
+            <p class="text-gray-600 text-lg">Confira todos os detalhes das nossas coleções.</p>
+            <a href="index.html" class="inline-block mt-4 text-[#e91e63] font-bold hover:underline"><i class="fas fa-arrow-left mr-2"></i> Voltar para a Página Inicial</a>
+        </div>
+
+        <section id="infantil" class="mb-16 container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#e91e63] text-center mb-8 border-b-2 border-gray-200 pb-2 w-max mx-auto px-10">Moda Infantil</h2>
+            <div class="produto-grid">
+                <div class="produto-card">
+                    <img src="Imagens-produtos/infantil1.jpeg" alt="Moda Infantil 1">
+                    <div class="produto-info">
+                        <h3>Sapato infantil 01</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse no Sapato infantil 01!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/infantil5.jpeg" alt="Moda Infantil 5">
+                    <div class="produto-info">
+                        <h3>Sapato infantil 02</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse no Sapato infantil 02!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/infantil2.jpeg" alt="Moda Infantil 2">
+                    <div class="produto-info">
+                        <h3>Moda Infantil Modelo 01</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse no Infantil Modelo 01!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/infantil3.jpeg" alt="Moda Infantil 3">
+                    <div class="produto-info">
+                        <h3>Moda Infantil Modelo 02</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse no Infantil Modelo 02!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/infantil4.jpeg" alt="Moda Infantil 4">
+                    <div class="produto-info">
+                        <h3>Moda Infantil Modelo 03</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse no Infantil Modelo 03!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calcados" class="mb-16 container mx-auto px-4  py-10 rounded-xl">
+            <h2 class="text-3xl font-bold text-[#e91e63] text-center mb-8 border-b-2 border-gray-200 pb-2 w-max mx-auto px-10">Calçados</h2>
+            <div class="produto-grid">
+                <div class="produto-card">
+                    <img src="Imagens-produtos/calcados1.jpeg" alt="Calçado 1">
+                    <div class="produto-info">
+                        <h3>Vitrine calçados 01</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse em um calçado da vitrine!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/sandalia1.jpeg" alt="Sandália 1">
+                    <div class="produto-info">
+                        <h3>Calçado Modelo 01</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse no Calçado Modelo 01!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/sandalia2.jpeg" alt="Sandália 2">
+                    <div class="produto-info">
+                        <h3>Calçado Modelo 01</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse no Calçado Modelo 02!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acessorios" class="mb-16 container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#e91e63] text-center mb-8 border-b-2 border-gray-200 pb-2 w-max mx-auto px-10">Bolsas e Acessórios</h2>
+            <div class="produto-grid">
+                <div class="produto-card">
+                    <img src="Imagens-produtos/bolsas1.jpeg" alt="Bolsa 1">
+                    <div class="produto-info">
+                        <h3>Vitrine bolsas</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse em uma bolsa da vitrine!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/bolsas2.jpeg" alt="Bolsa 2">
+                    <div class="produto-info">
+                        <h3>Vitrine bolsas</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse em uma bolsa da vitrine!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/bolsas3.jpeg" alt="Bolsa 3">
+                    <div class="produto-info">
+                        <h3>Bolsa Modelo 01</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse na Bolsa Modelo 01!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/bolsas4.jpeg" alt="Bolsa 4">
+                    <div class="produto-info">
+                        <h3>Bolsa Modelo 02</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse na Bolsa Modelo 02!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/bolsas5.jpeg" alt="Bolsa 5">
+                    <div class="produto-info">
+                        <h3>Bolsa Modelo 03</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse na Bolsa Modelo 03!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="Imagens-produtos/bolsas6.jpeg" alt="Bolsa 6">
+                    <div class="produto-info">
+                        <h3>Bolsa Modelo 04</h3>
+                        <a href="https://wa.me/5517981945396?text=Olá, tenho interesse na Bolsa Modelo 04!" target="_blank" class="btn-reservar"><i class="fab fa-whatsapp mr-2"></i> Tenho Interesse</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+<footer style="background-color: #212529; " class="bg-gray-800 text-white p-6 text-center">
+    <p>© 2026 Mega Modas - Todos os direitos reservados.</p>
+</footer>
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('main-menu-mobile'); 
+        menuToggle.addEventListener('click', () => { 
+            menuToggle.classList.toggle('open'); 
+            mobileMenu.classList.toggle('hidden'); 
+            mobileMenu.classList.toggle('flex'); 
+        });    
+</script>
+</body>
+</html>
