@@ -194,8 +194,6 @@ diretamente no navegador.
 
 O projeto está publicado e disponível para demonstração através do **GitHub Pages**, permitindo visualizar sua interface e funcionalidades diretamente no navegador.
 
-Link do projeto:
-
-https://israel-reis-pereira.github.io/loja-megamoda/
+Link do projeto: [israel-reis-pereira.github.io/loja-megamoda/](https://israel-reis-pereira.github.io/loja-megamoda/)
 
 ---
