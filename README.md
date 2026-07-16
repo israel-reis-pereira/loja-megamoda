@@ -161,6 +161,10 @@ DEVmoda/
 │
 ├── imagens/
 │
+├── imagens da loja/
+│
+├── Imagens-produtos/
+│
 ├── js/
 │   └── script.js
 │
