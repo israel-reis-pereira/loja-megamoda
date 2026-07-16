@@ -19,15 +19,15 @@
             </a>
 
             <nav class="hidden md:block"> 
-                <ul class="menu flex flex-row space-x-8 items-center">
-                    <li><a href="index.html" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Voltar para Home</a></li>
-                    <li><a href="#infantil" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Infantil</a></li>
-                    <li><a href="#calcados" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Calçados</a></li>
-                    <li><a href="#acessorios" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Bolsas</a></li>
+                <ul class="menu flex flex-row space-x-8 items-center" id="main-menu-desktop">
+                    <li><a href="index.html" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Voltar para Home</a></li>
+                    <li><a href="#infantil" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Infantil</a></li>
+                    <li><a href="#calcados" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Calçados</a></li>
+                    <li><a href="#acessorios" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Bolsas</a></li>
                 </ul>
             </nav>
 
-            <button class="mobile-menu-toggle md:hidden" id="menu-toggle">
+            <button class="mobile-menu-toggle md:hidden" id="menu-toggle" aria-expanded="false" aria-controls="main-menu-mobile" aria-label="Alternar Menu de Navegação">
                 <span class="bar bar-1"></span>
                 <span class="bar bar-2"></span>
                 <span class="bar bar-3"></span>
@@ -35,10 +35,10 @@
             
             <nav class="absolute top-20 left-0 w-full bg-white shadow-lg z-20 md:hidden hidden" id="main-menu-mobile">
                  <ul class="menu flex flex-col space-y-2 p-4">
-                    <li><a href="index.html" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Voltar para Home</a></li>
-                    <li><a href="#infantil" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Infantil</a></li>
-                    <li><a href="#calcados" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Calçados</a></li>
-                    <li><a href="#acessorios" class="block text-gray-700 hover:text-[#e91e63] font-semibold py-2">Bolsas</a></li>
+                    <li><a href="index.html" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Voltar para Home</a></li>
+                    <li><a href="#infantil" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Infantil</a></li>
+                    <li><a href="#calcados" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Calçados</a></li>
+                    <li><a href="#acessorios" class="menu-link block text-gray-700 hover:text-[#e91e63] font-semibold transition duration-200 py-2">Bolsas</a></li>
                  </ul>
             </nav>
         </div>
